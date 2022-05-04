@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=960, user-scalable=no">
+    <title>Mutant Rampage Run</title>
+    <link rel="stylesheet" href="Mutant_Rampage_data/style.css">
+  </head>
+  <body>
+    <div id="myNav" class="overlay" style="display:block">
+      <img src="Mutant_Rampage_data/logo.png" alt="">
+      <div class="overlay-content">
+        <table>
+          <tr><td colspan="3">Before you begin the game, please fill out the form below. </td></tr>
+          <tr><td rowspan="3" class="cssIDLE"></td> <td>Name:</td><td><input id='_input_name' type="text" value=""></td></tr>
+          <tr><td>Email:</td><td><input id='_input_email' type="text" value=""></td></tr>
+          <tr><td colspan="2"><input type="button" value="Next" onclick="G.Submit_user_info()"></td></tr>
+          <tr><td colspan="3" style="color:red" id='_errorMsg'></td></tr>
+        </table>
+      </div>
+    </div>
+    <canvas id="canvas" width="960" height="540"></canvas>
+
+
+    <script type="text/javascript">
+      /// scoreboard(top 10) <= this data should be already in the page from the server.
+      var scoreboard = [
+        {name:"Mike",score:210},
+        {name:"Lucy",score:200},
+        {name:"Jhon",score:190},
+        {name:"ccc",score:110},
+        {name:"ccc",score:110},
+        {name:"ccc",score:110},
+        {name:"ccc",score:110},
+        {name:"ccc",score:110},
+        {name:"ccc",score:110},
+        {name:"ccc",score:110},
+      ];
+    </script>
+    <script src="Mutant_Rampage_data/api.js" charset="utf-8"></script>
+    <script src="Mutant_Rampage_data/Level_1.js" charset="utf-8"></script>
+    <script src="Mutant_Rampage_data/func.js" charset="utf-8"></script>
+    <script src="Mutant_Rampage_data/game.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+@font-face {
+  font-family: font1;
+  src: url(font1.ttf);
+}
+body {background-color: #123; color: white; margin: 0; padding: 0; overflow: hidden; text-align: center;}
+#canvas:focus { outline: none;background-color: #123;}
+#canvas { outline: none;background-color: #123; width: 100%; height: 100vh;}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.overlay table {
+  margin: auto;
+  padding: 8px;
+  font-size: 32px;
+  color: #818181;
+  width: 800px;
+  background-color: white;
+}
+.overlay input[type='text']{width: 400px; font-size: 32px;}
+.overlay input[type='button']{
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+}
+.cssIDLE{
+  width: 200px;
+  height: 200px;
+  background-image: url("idle.gif");
+  background-size: cover;
+}
